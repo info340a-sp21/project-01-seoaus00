@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+body {
+    width: 70%;
+    background-color: #bccad6;
+}
+
+header {
+    text-align: center;
+    margin: 25px 0;
+    color: #667292;
+}
+
+p {
+    padding: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+.description {
+    margin: 1rem;
+    background-color: #667292;
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 1.5rem;
+    color: #f1e3dd;
+}
+
+.proposal {
+    margin: 1rem;
+    background-color: #667292;
+    border-radius: 1rem;
+}
+
+footer {
+    width: 20%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #667292;
+}
