@@ -53,3 +53,8 @@ footer p {
 a:hover {
     color: #f1e3dd;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
