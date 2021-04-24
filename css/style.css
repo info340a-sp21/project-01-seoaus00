@@ -23,7 +23,7 @@ a {
     text-decoration: none;
     color: #bccad6;
 }
-.description {
+.tile {
     margin: 1rem;
     background-color: #667292;
     border-radius: 1rem;
@@ -32,12 +32,6 @@ a {
 .container {
     padding: 1.5rem;
     color: #f1e3dd;
-}
-
-.proposal {
-    margin: 1rem;
-    background-color: #667292;
-    border-radius: 1rem;
 }
 
 footer {
