@@ -11,24 +11,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Discover Your Future</h1>
+    <header>  
+        <nav>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Discover Your Future</h1>
+                </div>
+                <div class="right-nav">
+                    <div class="nav-links">
+                        <a class="active" href="#home">Home</a>
+                        <a href="#about">About</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input name="searchbox" type="text" placeholder="Search..." size="80">
+            </div>
+        </nav>
     </header>
-    <div class="topnav">
+    <!-- <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <input type="text" placeholder="Search...">
-    </div>
+    </div> -->
     <div class="main-container">
         <section class="tile left">
             <div class="container filter">
                 <h2>Job Type Filters</h2>
-                <button type="button">Program Management</button>
+                <div class="type type1">
+                    <input type="checkbox" id="job-type-1" name="" value="">
+                    <label for="job-type-1">Program Management</label>
+                </div>
+                <div class="type type2">
+                    <input type="checkbox" id="job-type-2" name="" value="">
+                    <label for="job-type-2">Finance</label>
+                </div>
+                <div class="type type3">
+                    <input type="checkbox" id="job-type-3" name="" value="">
+                    <label for="job-type-3">Sales</label>
+                </div>
+                <div class="type type4">
+                    <input type="checkbox" id="job-type-4" name="" value="">
+                    <label for="job-type-4">Marketing</label>
+                </div>
+                <div class="type type5">
+                    <input type="checkbox" id="job-type-5" name="" value="">
+                    <label for="job-type-5">Technical Solutions</label>
+                </div>
+                <div class="type type6">
+                    <input type="checkbox" id="job-type-6" name="" value="">
+                    <label for="job-type-6">User Experience & Design</label>
+                </div>
+                <!-- <button type="button">Program Management</button>
                 <button type="button">Finance</button>
                 <button type="button">Sales</button>
                 <button type="button">Marketing</button>
                 <button type="button">Technical Solutions</button>
-                <button type="button">User Experience & Design</button>
+                <button type="button">User Experience & Design</button> -->
             </div>
         </section>
 
