@@ -19,19 +19,10 @@ p {
     padding: .5rem 0;
 }
 
-a {
-    text-decoration: none;
-    color: #bccad6;
-}
 .tile {
     margin: 1rem;
     background-color: #667292;
     border-radius: 1rem;
-}
-
-.container {
-    padding: 1.5rem;
-    color: #f1e3dd;
 }
 
 footer {
@@ -62,16 +53,29 @@ h2 {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    padding: 1.5rem;
+    color: #f1e3dd;
 }
 
 .jobs {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.middle h2 {
+    color: #f1e3dd;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 img {
-    height: 75px;
+    float: left;
+    height: 100px;
     width: 100px;
+    object-fit: cover;
+    border-radius: 15%;
+    margin-right: .5rem;
 }
 
 section {
@@ -79,10 +83,27 @@ section {
 }
 
 .listing {
-    display: flex;
+    float: left;
+    color: #f1e3dd;
+    margin: .25rem;
 }
 
 button {
     padding: 1rem;
     margin: 1rem;
+    width: 80%;
 }
+
+.friends {
+    padding: 1.5rem;
+    color: #f1e3dd;
+}
+
+.main-container .middle {
+    flex-grow: 2;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
