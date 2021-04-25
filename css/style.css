@@ -7,7 +7,7 @@
 body {
     width: 80%;
     /* background-color: #bccad6; */
-    background-color: #eee;
+    background-color: white;
 }
 
 header {
@@ -22,94 +22,61 @@ section {
 }
 
 nav .nav-container {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-nav .nav-logo {
-    margin: 0;
 }
 
 nav .nav-links {
-    margin: 0;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav .nav-links a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #667292;
-}
-
-nav .right-nav {
-    margin: 0;
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+    display: none;
 }
 
 nav .nav-search {
+    width: 70%;
     margin: 4rem auto;
     align-self: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 1rem;
 }
 
 nav .nav-search input[type=text] {
     padding: .5rem;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0);
     margin-right: 1rem;
     font-size: 1rem;
     border-radius: 1rem;
+    outline: none;
+}
+
+nav .nav-search button {
+    border-radius: 1rem;
+    background-color: #FF6583;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+nav .nav-search p {
+    padding: .3rem .75rem;
+}
+
+nav h1 {
+    color: #6C63FF;
+}
+
+main {
+    color: #505050;
+}
+
+main h1 {
+    font-size: 4rem;
+}
+
+main h1 .highlighted {
+    color: #6C63FF;
 }
 
 p {
     padding: .5rem 0;
-}
-
-.tile {
-    margin: 1rem;
-    background-color: #667292;
-    border-radius: 1rem;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.filter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-    color: #f1e3dd;
-}
-
-.type {
-    margin: 0;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.jobs {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 1rem;
-}
-
-.job-name {
-    margin: 0;
-}
-
-.middle h2, .right h2 {
-    color: #667292;
-    /* padding: 1.5rem; */
-    padding-bottom: 1rem;
 }
 
 .listing img {
@@ -131,36 +98,223 @@ p {
     box-shadow: 1px 1px 9px rgba(0, 0, 0, .1);
 }
 
-.filter button {
-    padding: 1rem;
-    margin: 1rem;
-    width: 80%;
-    cursor: pointer;
+.right {
+    display: none;
 }
 
-.profile {
-    padding: 1.5rem;
-    color: #f1e3dd;
+.left {
+    margin: 0;
+    padding-bottom: 1.5rem;
 }
 
-.main-container .middle {
-    flex-grow: 4;
-    background-color: #eee;
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    width: 20%;
+    border-radius: 1rem;
+    text-align: center;
 }
 
-.main-container .left {
-    flex-grow: 1;
+footer p {
+    color: #667292;
 }
 
-.main-container .right {
-    flex-grow: 1;
+@media (min-width: 598px) {
+    nav #hamburger-menu {
+        display: none;
+    }
+
+    nav .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    nav .right-nav{
+        margin: 0;
+        width: 30%;
+        display: flex;
+        justify-self: flex-end;
+    }
+
+    nav .nav-links {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav .nav-links a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #505050;
+    }  
 }
+
+@media (min-width: 768px) {
+    html {
+        height: 100%;
+    }
+    .hero-container {
+        margin: 23vh 0;
+        display: flex;
+    }
+
+    .hero-content-container {
+        margin: 0;
+        width: 50%;
+    }
+
+    .main-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-container .middle {
+        flex-grow: 4;
+        background-color: white;
+    }
+    
+    .main-container .left {
+        flex-grow: 1;
+    }
+    
+    .main-container .right {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .profile {
+        padding: 1.5rem;
+        color: #f1e3dd;
+    }
+    /* idea for profile section 
+    https://www.w3schools.com/howto/howto_css_profile_card.asp
+    */
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 300px;
+        min-width: 200px;
+        text-align: center;
+        padding-top: 1rem;
+        color: #f1e3dd;
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        color: black;
+        background-color: #f1e3dd;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .card a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #f1e3dd;
+    }
+
+    button:hover, a:hover {
+        opacity: 0.7;
+    }
+
+    .card img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 15%;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+    }
+    .tile {
+        margin: 1rem;
+        background-color: #667292;
+        border-radius: 1rem;
+    }
+    
+    /* .main-container {
+        display: flex;
+        flex-direction: row;
+    } */
+    
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        color: #f1e3dd;
+    }
+    
+    .type {
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .jobs {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+    
+    .job-name {
+        margin: 0;
+    }
+    
+    .middle h2, .right h2 {
+        color: #667292;
+        /* padding: 1.5rem; */
+        padding-bottom: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .filter button {
+        padding: 1rem;
+        margin: 1rem;
+        width: 80%;
+        cursor: pointer;
+    } 
+}
+
+@media (min-width: 1200px) {
+    nav .nav-logo {
+        margin: 0;
+        color: #6C63FF;
+    }
+    
+    /* nav .right-nav {
+        margin: 0;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    } */
+    
+     
+}
+
 
 
 /* idea for nav section
 https://www.w3schools.com/howto/howto_css_searchbar.asp 
 */
-.topnav {
+/* .topnav {
     overflow: hidden;
 }
 
@@ -190,61 +344,4 @@ https://www.w3schools.com/howto/howto_css_searchbar.asp
     border: none;
     margin-right: 1rem;
     font-size: 1rem;
-}
-
-/* idea for profile section 
-https://www.w3schools.com/howto/howto_css_profile_card.asp
-*/
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
-    min-width: 200px;
-    text-align: center;
-    padding-top: 1rem;
-    color: #f1e3dd;
-}
-
-.card button {
-    border: none;
-    outline: 0;
-    color: black;
-    background-color: #f1e3dd;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.card a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #f1e3dd;
-}
-
-button:hover, a:hover {
-    opacity: 0.7;
-}
-
-.card img {
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 15%;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    width: 20%;
-    border-radius: 1rem;
-    text-align: center;
-}
-
-footer p {
-    color: #667292;
-}
+} */
