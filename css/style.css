@@ -101,7 +101,9 @@ section {
     flex-grow: 2;
 }
 
-/* idea for nav section */
+/* idea for nav section
+https://www.w3schools.com/howto/howto_css_searchbar.asp 
+*/
 .topnav {
     overflow: hidden;
 }
@@ -134,7 +136,9 @@ section {
     font-size: 1rem;
 }
 
-/* idea for profile section */
+/* idea for profile section 
+https://www.w3schools.com/howto/howto_css_profile_card.asp
+*/
 .card {
     display: flex;
     flex-direction: column;
