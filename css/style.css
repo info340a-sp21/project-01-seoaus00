@@ -60,13 +60,13 @@ h2 {
     padding-bottom: 1rem;
 }
 
-.middle h2 {
+.middle h2, .right h2 {
     color: #f1e3dd;
     padding: 1.5rem;
     padding-bottom: 1rem;
 }
 
-img {
+.listing img {
     float: left;
     height: 100px;
     width: 100px;
@@ -85,10 +85,11 @@ section {
     margin: .25rem;
 }
 
-button {
+.filter button {
     padding: 1rem;
     margin: 1rem;
     width: 80%;
+    cursor: pointer;
 }
 
 .profile {
@@ -100,6 +101,7 @@ button {
     flex-grow: 2;
 }
 
+/* idea for nav section */
 .topnav {
     overflow: hidden;
 }
@@ -131,3 +133,48 @@ button {
     margin-right: 1rem;
     font-size: 1rem;
 }
+
+/* idea for profile section */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    padding-top: 1rem;
+}
+  
+.title {
+    color: #f1e3dd;
+    font-size: 18px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    color: black;
+    background-color: #f1e3dd;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f1e3dd;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
