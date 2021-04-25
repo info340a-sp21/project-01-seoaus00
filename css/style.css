@@ -69,3 +69,20 @@ h2 {
     flex-grow: 1;
 }
 
+.jobs {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 75px;
+    width: 100px;
+}
+
+section {
+    height: 100%;
+}
+
+.listing {
+    display: flex;
+}
