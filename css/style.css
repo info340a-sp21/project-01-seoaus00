@@ -73,6 +73,7 @@ h2 {
     object-fit: cover;
     border-radius: 15%;
     margin-right: .5rem;
+    align-self: center;
 }
 
 section {
@@ -80,7 +81,7 @@ section {
 }
 
 .listing {
-    float: left;
+    display: flex;
     color: #f1e3dd;
     margin: .25rem;
 }
@@ -178,3 +179,7 @@ button:hover, a:hover {
     border-radius: 15%;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+}
