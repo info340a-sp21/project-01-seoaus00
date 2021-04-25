@@ -253,8 +253,7 @@ footer p {
     .filter {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
+        align-items: left;
         color: #f1e3dd;
     }
     
@@ -299,50 +298,4 @@ footer p {
         margin: 0;
         color: #6C63FF;
     }
-    
-    /* nav .right-nav {
-        margin: 0;
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-    } */
-    
-     
 }
-
-
-
-/* idea for nav section
-https://www.w3schools.com/howto/howto_css_searchbar.asp 
-*/
-/* .topnav {
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    font-size: 1rem;
-    color: #667292;
-    text-align: center;
-    padding: 10px 10px;
-    margin-left: 1rem;
-    text-decoration: none;
-    border-radius: 15%;
-}
-
-.topnav a:hover {
-    background-color: #f1e3dd;
-}
-
-.topnav a.active {
-    background-color: #667292;
-    color: #f1e3dd;
-}
-
-.topnav input[type=text] {
-    float: right;
-    padding: .5rem;
-    border: none;
-    margin-right: 1rem;
-    font-size: 1rem;
-} */
