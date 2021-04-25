@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 70%;
+    width: 100%;
     background-color: #bccad6;
 }
 
@@ -49,7 +49,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
     padding: 1.5rem;
     color: #f1e3dd;
 }
@@ -67,7 +66,7 @@ h2 {
 }
 
 .listing img {
-    float: left;
+    justify-self: left;
     height: 100px;
     width: 100px;
     object-fit: cover;
@@ -99,8 +98,17 @@ section {
 }
 
 .main-container .middle {
-    flex-grow: 2;
+    flex-grow: 4;
 }
+
+.main-container .left {
+    flex-grow: 1;
+}
+
+.main-container .right {
+    flex-grow: 1;
+}
+
 
 /* idea for nav section
 https://www.w3schools.com/howto/howto_css_searchbar.asp 
