@@ -147,11 +147,7 @@ https://www.w3schools.com/howto/howto_css_profile_card.asp
     min-width: 200px;
     text-align: center;
     padding-top: 1rem;
-}
-  
-.title {
     color: #f1e3dd;
-    font-size: 18px;
 }
 
 .card button {
