@@ -4,11 +4,6 @@
     margin: auto;
 }
 
-button {
-    padding: 1rem;
-    margin: 1rem;
-}
-
 body {
     width: 70%;
     background-color: #bccad6;
@@ -85,4 +80,9 @@ section {
 
 .listing {
     display: flex;
+}
+
+button {
+    padding: 1rem;
+    margin: 1rem;
 }
