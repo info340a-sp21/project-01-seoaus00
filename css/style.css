@@ -5,8 +5,9 @@
 }
 
 body {
-    width: 100%;
-    background-color: #bccad6;
+    width: 80%;
+    /* background-color: #bccad6; */
+    background-color: #eee;
 }
 
 header {
@@ -14,6 +15,54 @@ header {
     margin: 25px 0;
     color: #667292;
     font-size: 1.5rem;
+}
+
+section {
+    height: 100%;
+}
+
+nav .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav .nav-logo {
+    margin: 0;
+}
+
+nav .nav-links {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .nav-links a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #667292;
+}
+
+nav .right-nav {
+    margin: 0;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .nav-search {
+    margin: 4rem auto;
+    align-self: center;
+}
+
+nav .nav-search input[type=text] {
+    padding: .5rem;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
 }
 
 p {
@@ -26,23 +75,9 @@ p {
     border-radius: 1rem;
 }
 
-footer {
-    width: 20%;
-    border-radius: 1rem;
-    text-align: center;
-}
-
-footer p {
-    color: #667292;
-}
-
 .main-container {
     display: flex;
     flex-direction: row;
-}
-
-h2 {
-    text-align: center;
 }
 
 .filter {
@@ -53,15 +88,27 @@ h2 {
     color: #f1e3dd;
 }
 
+.type {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .jobs {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding-bottom: 1rem;
 }
 
+.job-name {
+    margin: 0;
+}
+
 .middle h2, .right h2 {
-    color: #f1e3dd;
-    padding: 1.5rem;
+    color: #667292;
+    /* padding: 1.5rem; */
     padding-bottom: 1rem;
 }
 
@@ -75,14 +122,13 @@ h2 {
     align-self: center;
 }
 
-section {
-    height: 100%;
-}
-
 .listing {
     display: flex;
-    color: #f1e3dd;
-    margin: .25rem;
+    color: #667292;
+    margin: .5rem;
+    /* border: 1px solid #505050; */
+    border-radius: 1rem;
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, .1);
 }
 
 .filter button {
@@ -99,6 +145,7 @@ section {
 
 .main-container .middle {
     flex-grow: 4;
+    background-color: #eee;
 }
 
 .main-container .left {
@@ -190,4 +237,14 @@ button:hover, a:hover {
 .description {
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    width: 20%;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #667292;
 }
