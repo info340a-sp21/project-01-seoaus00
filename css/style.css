@@ -31,6 +31,22 @@ i {
     color: #FF6583;
 }
 
+.hero-figure {
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background: url('../img/road.jpg') no-repeat;
+    background-size: contain;
+    justify-self: flex-end;
+}
+.description-figure {
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background: url('../img/passion.jpg') no-repeat;
+    background-size: contain;
+    justify-self: flex-end;
+}
 nav {
     width: 80%;
 }
@@ -199,6 +215,7 @@ footer {
     margin: 15vh 0 0 0;
     height: 70vh;
     display: flex;
+    justify-content: space-between;
 }
 
 section .about-content h1{
