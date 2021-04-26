@@ -127,15 +127,6 @@ p {
     padding: .5rem 0;
 }
 
-.listing img {
-    justify-self: left;
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 15%;
-    margin-right: .5rem;
-    align-self: center;
-}
 
 .listing {
     display: flex;
@@ -143,6 +134,11 @@ p {
     margin: .5rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 9px rgba(0, 0, 0, .1);
+}
+
+.listing:hover {
+    box-shadow: 5px 10px;
+    cursor: pointer;
 }
 
 .type {
