@@ -120,6 +120,12 @@ footer p {
     color: #667292;
 }
 
+.nav-logo {
+    display: flex;
+    margin: 0;
+    color: #6C63FF;
+}
+
 @media (min-width: 598px) {
     nav #hamburger-menu {
         display: none;
@@ -151,6 +157,12 @@ footer p {
         text-decoration: none;
         color: #505050;
     }  
+
+    .nav-logo {
+        display: flex;
+        margin: 0;
+        color: #6C63FF;
+    }
 }
 
 @media (min-width: 768px) {
@@ -169,6 +181,12 @@ footer p {
 
     .main-container {
         flex-direction: row;
+    }
+
+    .nav-logo {
+        display: flex;
+        margin: 0;
+        color: #6C63FF;
     }
 }
 
@@ -277,10 +295,17 @@ footer p {
     .container {
         padding: 1rem;
     }
+
+    .nav-logo {
+        display: flex;
+        margin: 0;
+        color: #6C63FF;
+    }
 }
 
 @media (min-width: 1200px) {
-    nav .nav-logo {
+    .nav-logo {
+        display: flex;
         margin: 0;
         color: #6C63FF;
     }
