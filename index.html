@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <meta name="author" content="Austin Seo, David Warne">
     <title>Project Proposal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>  
-        <nav> 
+    <header>
+        <nav>
             <div class="nav-container">
                 <div class="nav-logo">
                     <i class="fa fa-paper-plane-o fa-3x logo" aria-hidden="true"></i>
@@ -29,125 +33,139 @@
             </div>
             <div class="nav-search">
                 <input name="searchbox" type="text" placeholder="Job title, Skills, or Company...">
-                <button><p>Search</p></button>
+                <button>
+                    <p>Search</p>
+                </button>
             </div>
         </nav>
     </header>
 
-    <div class="main-container">
-        <section class="tile left">
-            <div class="container filter">
-                <h2>Job Type Filters</h2>
-                <div class="type type1">
-                    <input type="checkbox" id="job-type-1" name="" value="">
-                    <label for="job-type-1">Program Management</label>
+    <main>
+        <div class="main-container">
+            <section class="tile left">
+                <div class="filter">
+                    <h2>Industry</h2>
+                    <div class="type type1">
+                        <input type="checkbox" id="job-type-1" name="" value="">
+                        <label for="job-type-1">Program Management</label>
+                    </div>
+                    <div class="type type2">
+                        <input type="checkbox" id="job-type-2" name="" value="">
+                        <label for="job-type-2">Finance</label>
+                    </div>
+                    <div class="type type3">
+                        <input type="checkbox" id="job-type-3" name="" value="">
+                        <label for="job-type-3">Sales</label>
+                    </div>
+                    <div class="type type4">
+                        <input type="checkbox" id="job-type-4" name="" value="">
+                        <label for="job-type-4">Marketing</label>
+                    </div>
+                    <div class="type type5">
+                        <input type="checkbox" id="job-type-5" name="" value="">
+                        <label for="job-type-5">Technical Solutions</label>
+                    </div>
+                    <div class="type type6">
+                        <input type="checkbox" id="job-type-6" name="" value="">
+                        <label for="job-type-6">User Experience & Design</label>
+                    </div>
                 </div>
-                <div class="type type2">
-                    <input type="checkbox" id="job-type-2" name="" value="">
-                    <label for="job-type-2">Finance</label>
-                </div>
-                <div class="type type3">
-                    <input type="checkbox" id="job-type-3" name="" value="">
-                    <label for="job-type-3">Sales</label>
-                </div>
-                <div class="type type4">
-                    <input type="checkbox" id="job-type-4" name="" value="">
-                    <label for="job-type-4">Marketing</label>
-                </div>
-                <div class="type type5">
-                    <input type="checkbox" id="job-type-5" name="" value="">
-                    <label for="job-type-5">Technical Solutions</label>
-                </div>
-                <div class="type type6">
-                    <input type="checkbox" id="job-type-6" name="" value="">
-                    <label for="job-type-6">User Experience & Design</label>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Going to try and use font awesome to add icons to each of the job listings -->
-        <section class="tile middle">
-            <h2>Job Listings</h2>
-            <div class="jobs">
-                <div class="listing container">
-                    <!-- <img src="img/pm.png" alt="program management logo"> -->
-                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            Google Cloud Program Manager
-                        </h3>
-                        <p class="job-description">Shape, shepherd, ship, and show technical programs designed to support the work of Cloud Customer Engineers and Solutions Architects.</p>
+            <!-- Going to try and use font awesome to add icons to each of the job listings -->
+            <section class="tile middle">
+                <h2>Job Listings</h2>
+                <div class="jobs">
+                    <div class="listing container">
+                        <!-- <img src="img/pm.png" alt="program management logo"> -->
+                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                Google Cloud Program Manager
+                            </h3>
+                            <p class="job-description">Shape, shepherd, ship, and show technical programs designed to
+                                support the work of Cloud Customer Engineers and Solutions Architects.</p>
+                        </div>
+                    </div>
+                    <div class="listing container">
+                        <!-- <img src="img/finance.jpeg" alt="finance logo"> -->
+                        <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                Google Cloud Customer Engineer Manager, Financial Services
+                            </h3>
+                            <p class="job-description">Hire, coach and drive a high performance team to deliver against
+                                assigned goals while prioritizing an outstanding customer experience to customers and
+                                prospects.</p>
+                        </div>
+                    </div>
+                    <div class="listing container">
+                        <!-- <img src="img/sales.jpeg" alt="sales logo"> -->
+                        <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                Strategic Cloud DevOps and Infrastructure Engineer
+                            </h3>
+                            <p class="job-description">Consult with customers on technical issues based on in-depth
+                                product and technical knowledge.
+                                Develop technical tools and documentation to expedite implementations and improve
+                                product serviceability.</p>
+                        </div>
+                    </div>
+                    <div class="listing container">
+                        <!-- <img src="img/marketing.jpeg" alt="logo for marketing"> -->
+                        <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                Communications and Programs Manager, Google Technical Services
+                            </h3>
+                            <p class="job-description">Develop, write, and edit communications for executives, including
+                                emails, presentations, and videos. Work with and advise leadership on the right forum,
+                                timing, and content to ensure employees are enlightened, excited and empowered to meet
+                                business goals.</p>
+                        </div>
+                    </div>
+                    <div class="listing container">
+                        <!-- <img src="img/tech.jpeg" alt="logo for technical solutions"> -->
+                        <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                Data Analyst, Product and Tools Operations
+                            </h3>
+                            <p class="job-description">Collect and analyze data to draw insight and identify strategic
+                                solutions.
+                                Build consensus by facilitating broad collaboration with clear communication and
+                                documentation.</p>
+                        </div>
+                    </div>
+                    <div class="listing container">
+                        <!-- <img src="img/ux.jpeg" alt="logo for user experience"> -->
+                        <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i>
+                        <div class="description">
+                            <h3 class="job-name">
+                                User Experience Design Intern
+                            </h3>
+                            <p class="job-description">Motion Designer:
+                                Create motion studies for enhancing usability, interaction, storytelling and delight.
+                                Work closely with UX partners and product managers to ideate and define.
+                                Work closely with engineering to integrate into products.
+                                Work closely with research to test and inform user experiences.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="listing container">
-                    <!-- <img src="img/finance.jpeg" alt="finance logo"> -->
-                    <i class="fa fa-usd fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            Google Cloud Customer Engineer Manager, Financial Services
-                        </h3>
-                        <p class="job-description">Hire, coach and drive a high performance team to deliver against assigned goals while prioritizing an outstanding customer experience to customers and prospects.</p>
-                    </div>
+            </section>
+
+            <section class="tile right">
+                <div class="card">
+                    <img src="img/profile.png" alt="profile picture">
+                    <h1 class="name">John Doe</h1>
+                    <p class="title">Student</p>
+                    <p>University of Washington</p>
+                    <p><button>Edit</button></p>
                 </div>
-                <div class="listing container">
-                    <!-- <img src="img/sales.jpeg" alt="sales logo"> -->
-                    <i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            Strategic Cloud DevOps and Infrastructure Engineer
-                        </h3>
-                        <p class="job-description">Consult with customers on technical issues based on in-depth product and technical knowledge.
-                            Develop technical tools and documentation to expedite implementations and improve product serviceability.</p>
-                    </div>
-                </div>
-                <div class="listing container">
-                    <!-- <img src="img/marketing.jpeg" alt="logo for marketing"> -->
-                    <i class="fa fa-area-chart fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            Communications and Programs Manager, Google Technical Services
-                        </h3>
-                        <p class="job-description">Develop, write, and edit communications for executives, including emails, presentations, and videos. Work with and advise leadership on the right forum, timing, and content to ensure employees are enlightened, excited and empowered to meet business goals.</p>
-                    </div>
-                </div>
-                <div class="listing container">
-                    <!-- <img src="img/tech.jpeg" alt="logo for technical solutions"> -->
-                    <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            Data Analyst, Product and Tools Operations
-                        </h3>
-                        <p class="job-description">Collect and analyze data to draw insight and identify strategic solutions.
-                            Build consensus by facilitating broad collaboration with clear communication and documentation.</p>
-                    </div>
-                </div>
-                <div class="listing container">
-                    <!-- <img src="img/ux.jpeg" alt="logo for user experience"> -->
-                    <i class="fa fa-smile-o fa-2x" aria-hidden="true"></i>
-                    <div class="description">
-                        <h3 class="job-name">
-                            User Experience Design Intern
-                        </h3>
-                        <p class="job-description">Motion Designer:
-                            Create motion studies for enhancing usability, interaction, storytelling and delight.
-                            Work closely with UX partners and product managers to ideate and define.
-                            Work closely with engineering to integrate into products.
-                            Work closely with research to test and inform user experiences.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-        <section class="tile right">
-            <div class="card">
-                <img src="img/profile.png" alt="profile picture">
-                <h1 class="name">John Doe</h1>
-                <p class="title">Student</p>
-                <p>University of Washington</p>
-                <p><button>Edit</button></p>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -155,4 +173,5 @@
         </div>
     </footer>
 </body>
+
 </html>

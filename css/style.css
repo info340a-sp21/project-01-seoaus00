@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 80%;
+    width: 100%;
     /* background-color: #bccad6; */
     background-color: white;
 }
@@ -19,6 +19,20 @@ header {
 
 section {
     height: 100%;
+}
+
+h2 {
+    margin: 0;
+    color: #505050;
+    padding-bottom: 1rem;
+}
+
+i {
+    color: #FF6583;
+}
+
+nav {
+    width: 80%;
 }
 
 nav .nav-container {
@@ -44,6 +58,7 @@ nav .nav-search input[type=text] {
     font-size: 1rem;
     border-radius: 1rem;
     outline: none;
+    width: 75%;
 }
 
 nav .nav-search button {
@@ -54,7 +69,9 @@ nav .nav-search button {
     outline: none;
     cursor: pointer;
 }
-
+nav i {
+    color: #6C63FF;
+}
 nav .nav-search p {
     padding: .3rem .75rem;
 }
@@ -65,10 +82,41 @@ nav h1 {
 
 main {
     color: #505050;
+    width: 80%;
 }
 
-main h1 {
+main .hero-container h1 {
     font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.hero-content-container p {
+    margin-bottom: 1rem;
+}
+
+.hero-content-container button{
+    background-color: #FF6583;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .75rem 1rem;
+}
+
+.hero-content-container a {
+    color: #FF6583;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero-content-container button a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem .75rem;
+    font-size: 1rem;
 }
 
 main h1 .highlighted {
@@ -97,6 +145,11 @@ p {
     box-shadow: 1px 1px 9px rgba(0, 0, 0, .1);
 }
 
+.type {
+    margin: .5rem 0;
+    align-self: left;
+}
+
 .right {
     display: none;
 }
@@ -110,20 +163,44 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+.description h3 {
+    color: #505050;
+}
+
+.description p {
+    color: rgba(0, 0, 0, .25);
+}
 footer {
-    width: 20%;
-    border-radius: 1rem;
+    width: 100%;
     text-align: center;
+    background-color: #505050;
 }
 
 footer p {
-    color: #667292;
+    color: white;
 }
 
 .nav-logo {
     display: flex;
     margin: 0;
     color: #6C63FF;
+}
+
+.hero-container {
+    margin: 15vh 0 0 0;
+    height: 70vh;
+    display: flex;
+}
+
+section .about-content h1{
+    padding-bottom: 1rem;
+}
+
+section .about-content a {
+    text-decoration: none;
+    color: #505050;
+    cursor: pointer;
 }
 
 @media (min-width: 598px) {
@@ -138,7 +215,7 @@ footer p {
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
 
-    nav .right-nav{
+    nav .right-nav {
         margin: 0;
         width: 30%;
         display: flex;
@@ -163,15 +240,23 @@ footer p {
         margin: 0;
         color: #6C63FF;
     }
+
+    nav .nav-search input[type=text] {
+        width: 75%;
+    }
+
+    section .about-content h1{
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
     html {
         height: 100%;
     }
-    .hero-container {
-        margin: 23vh 0;
-        display: flex;
+
+    nav .nav-search input[type=text] {
+        width: 75%;
     }
 
     .hero-content-container {
@@ -187,6 +272,27 @@ footer p {
         display: flex;
         margin: 0;
         color: #6C63FF;
+    }
+
+    .problem-description {
+        margin: 0;
+        width: 50%;
+    }
+
+    .how-it-works {
+        margin: 0;
+        width: 50%;
+        justify-self: flex-end;
+    }
+
+    .tile {
+        padding: 1rem;
+    }
+    .middle {
+        width: 75%;
+    }
+    .left {
+        width: 25%;
     }
 }
 
@@ -220,7 +326,7 @@ footer p {
         min-width: 200px;
         text-align: center;
         padding-top: 1rem;
-        color: #f1e3dd;
+        color: #505050
     }
 
     .card button {
@@ -258,20 +364,17 @@ footer p {
     }
     .tile {
         margin: 1rem;
-        background-color: #667292;
+        background-color: white;
         border-radius: 1rem;
+        padding: 1rem;
     }
     
     .filter {
         display: flex;
         flex-direction: column;
         align-items: left;
-        color: #f1e3dd;
-    }
-
-    .type {
-        margin: .5rem 0;
-        align-self: left;
+        color: #505050;
+        padding: 0 1rem;
     }
     
     .jobs {
@@ -287,7 +390,7 @@ footer p {
     }
     
     .middle h2, .right h2 {
-        color: #667292;
+        color: #505050;
         /* padding: 1.5rem; */
         padding-bottom: 1rem;
     }
