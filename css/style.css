@@ -43,6 +43,10 @@ nav .nav-links {
     display: none;
 }
 
+.nav-search {
+    display: flex;
+}
+
 nav .nav-search {
     width: 70%;
     margin: 4rem auto;
@@ -50,9 +54,7 @@ nav .nav-search {
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 1rem;
 }
-.nav-search {
-    display: flex;
-}
+
 
 form input[type=text] {
     padding: .5rem;
@@ -62,6 +64,28 @@ form input[type=text] {
     border-radius: 1rem;
     outline: none;
     width: 100%;
+}
+
+p {
+    padding: .5rem 0;
+}
+
+footer p {
+    color: white;
+}
+
+.hero-content-container p {
+    margin-bottom: 1rem;
+}
+
+.hero-content-container button{
+    background-color: #FF6583;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: .75rem 1rem;
 }
 
 nav .nav-search button {
@@ -75,6 +99,11 @@ nav .nav-search button {
 nav i {
     color: #6C63FF;
 }
+
+.description p {
+    color: rgba(0, 0, 0, .25);
+}
+
 nav .nav-search p {
     padding: .3rem .75rem;
 }
@@ -91,20 +120,6 @@ main {
 main .hero-container h1 {
     font-size: 4rem;
     padding-bottom: 1rem;
-}
-
-.hero-content-container p {
-    margin-bottom: 1rem;
-}
-
-.hero-content-container button{
-    background-color: #FF6583;
-    border-radius: 1rem;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: .75rem 1rem;
 }
 
 .hero-content-container a {
@@ -126,9 +141,6 @@ main h1 .highlighted {
     color: #6C63FF;
 }
 
-p {
-    padding: .5rem 0;
-}
 
 form {
     width: 100%;
@@ -170,18 +182,12 @@ form {
     color: #505050;
 }
 
-.description p {
-    color: rgba(0, 0, 0, .25);
-}
 footer {
     width: 100%;
     text-align: center;
     background-color: #505050;
 }
 
-footer p {
-    color: white;
-}
 
 .nav-logo {
     display: flex;
