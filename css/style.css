@@ -31,33 +31,6 @@ i {
     color: #FF6583;
 }
 
-.hero-figure {
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    background: url('../img/road.jpg') no-repeat;
-    background-size: contain;
-    justify-self: flex-end;
-}
-
-.description-figure {
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    background: url('../img/passion.jpg') no-repeat;
-    background-size: contain;
-    justify-self: flex-end;
-}
-
-.works-figure {
-    margin: 0;
-    width: 100%;
-    height: 50vh;
-    background: url('../img/works.jpg') no-repeat;
-    background-size: contain;
-    justify-self: flex-end;
-}
-
 nav {
     width: 80%;
 }
@@ -82,6 +55,9 @@ nav .nav-search {
     border-radius: 1rem;
 }
 
+.image-container {
+    display: none;
+}
 
 form input[type=text] {
     padding: .5rem;
@@ -100,7 +76,10 @@ p {
 footer p {
     color: white;
 }
-
+/* .hero-content-container {
+    height: inherit;
+    width: 100%;
+} */
 .hero-content-container p {
     margin-bottom: 1rem;
 }
@@ -229,8 +208,17 @@ footer {
     justify-content: space-between;
 }
 
-section .about-content h1{
-    padding-bottom: 1rem;
+section .about-container {
+    padding: 6rem 0;
+}
+
+section .about-container h1{
+    padding-bottom: 5rem;
+}
+
+section .about-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 section .about-content a {
@@ -281,8 +269,45 @@ section .about-content a {
         width: 100%;
     }
 
-    section .about-content h1{
+    section .about-container h1{
         text-align: center;
+    }
+
+    .image-container{
+        margin: 0;
+        display: inherit;
+        justify-self: flex-end;
+        width: 50%;
+    }
+    
+    .hero-figure img {
+        margin: 0;
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+        object-position: 0% 68%;
+    }
+    
+    .description-figure {
+        padding: 0 5rem 0 0;
+    }
+    
+    .description-figure img{
+        margin: 0;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    
+    .works-figure {
+        padding: 0 0 0 5rem;
+    }
+    
+    .works-figure img {
+        margin: 0;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
     }
 }
 
@@ -294,8 +319,14 @@ section .about-content a {
     form input[type=text] {
         width: 100%;
     }
+    .hero-container {
+        height: 65vh;
+        display: flex;
+        justify-content: space-between;
+    }
 
     .hero-content-container {
+        height: inherit;
         margin: 0;
         width: 50%;
     }
@@ -313,6 +344,11 @@ section .about-content a {
     .problem-description {
         margin: 0;
         width: 50%;
+    }
+
+    .how-it-works-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .how-it-works {
