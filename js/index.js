@@ -20,6 +20,8 @@ function createPMCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function createFinanceCard(obj) {
@@ -40,6 +42,8 @@ function createFinanceCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function createSalesCard(obj) {
@@ -60,6 +64,8 @@ function createSalesCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function createMarketingCard(obj) {
@@ -80,6 +86,8 @@ function createMarketingCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function createTSCard(obj) {
@@ -100,6 +108,8 @@ function createTSCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function createUXCard(obj) {
@@ -120,13 +130,37 @@ function createUXCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    return outerDiv;
 }
 
 function renderJobListings() {
     d3.csv("../data/job_skills.csv").then(function(data) {
+        let listingArea = document.querySelector('#card-things');
+        listingArea.innerHTML = '';
+        for (let i = 0; i < 6; i++) {
+            let jobType = data[i].Category;
+            let listing;
+            if (jobType.includes('Finance')) {
+                listing = createFinanceCard(data[i])
+            } else if (jobType.includes('Program Management')) {
+                listing = createPMCard(data[i]);
+            } else if (jobType.includes('Sales')) {
+                listing = createSalesCard(data[i]);
+            } else if (jobType.includes('Marketing')) {
+                listing = createMarketingCard(data[i]);
+            } else if (jobType.includes('Technical Solutions')) {
+                listing = createTSCard(data[i]);
+            } else if (jobType.includes('User Experience')) {
+                listing = createUXCard(data[i]);
+            }
 
+            listingArea.append(listing);
+        }
     });
 }
+
+renderJobListings();
 
 // <div class="listing container">
     // <!-- <img src="img/pm.png" alt="program management logo"> --> */}
