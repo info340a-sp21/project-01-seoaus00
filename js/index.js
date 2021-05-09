@@ -207,7 +207,7 @@ filter1.addEventListener('change', function() {
 
 // Filtering for Finance
 let filter2 = document.querySelector('#job-type-2');
-filter1.addEventListener('change', function() {
+filter2.addEventListener('change', function() {
     if (this.checked) {
         d3.csv("../data/job_information.csv").then(function(data) {
             for (let i = 0; i < data.length; i++) {
@@ -227,7 +227,7 @@ filter1.addEventListener('change', function() {
 
 // Filtering for Sales
 let filter3 = document.querySelector('#job-type-3');
-filter1.addEventListener('change', function() {
+filter3.addEventListener('change', function() {
     if (this.checked) {
         d3.csv("../data/job_information.csv").then(function(data) {
             for (let i = 0; i < data.length; i++) {
@@ -247,7 +247,7 @@ filter1.addEventListener('change', function() {
 
 // Filtering for Marketing
 let filter4 = document.querySelector('#job-type-4');
-filter1.addEventListener('change', function() {
+filter4.addEventListener('change', function() {
     if (this.checked) {
         d3.csv("../data/job_information.csv").then(function(data) {
             for (let i = 0; i < data.length; i++) {
@@ -267,7 +267,7 @@ filter1.addEventListener('change', function() {
 
 // Filtering for Technical Solutions
 let filter5 = document.querySelector('#job-type-5');
-filter1.addEventListener('change', function() {
+filter5.addEventListener('change', function() {
     if (this.checked) {
         d3.csv("../data/job_information.csv").then(function(data) {
             for (let i = 0; i < data.length; i++) {
@@ -287,7 +287,7 @@ filter1.addEventListener('change', function() {
 
 // Filtering for UX 
 let filter6 = document.querySelector('#job-type-6');
-filter1.addEventListener('change', function() {
+filter6.addEventListener('change', function() {
     if (this.checked) {
         d3.csv("../data/job_information.csv").then(function(data) {
             for (let i = 0; i < data.length; i++) {
