@@ -205,3 +205,102 @@ filter1.addEventListener('change', function() {
     }
 })
 
+// Filtering for Finance
+let filter2 = document.querySelector('#job-type-2');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('Finance'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
+
+// Filtering for Sales
+let filter3 = document.querySelector('#job-type-3');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('Sales'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
+
+// Filtering for Marketing
+let filter4 = document.querySelector('#job-type-4');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('Marketing'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
+
+// Filtering for Technical Solutions
+let filter5 = document.querySelector('#job-type-5');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('Technical Solutions'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
+
+// Filtering for UX 
+let filter6 = document.querySelector('#job-type-6');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('User Experience'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
