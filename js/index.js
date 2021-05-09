@@ -26,3 +26,5 @@ function processData(allText) {
         lines.push(tarr);
     }
 }
+
+processData('../data/job_skills.csv');
