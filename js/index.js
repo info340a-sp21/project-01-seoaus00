@@ -135,7 +135,7 @@ function createUXCard(obj) {
 }
 
 function renderJobListings() {
-    d3.csv("../data/job_skills.csv").then(function(data) {
+    d3.csv("../data/job_information.csv").then(function(data) {
         let listingArea = document.querySelector('#card-things');
         listingArea.innerHTML = '';
         for (let i = 0; i < 6; i++) {
