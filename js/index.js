@@ -306,3 +306,5 @@ filter6.addEventListener('change', function() {
     }
 })
 
+// going to try and add an event listener to the job listings 
+
