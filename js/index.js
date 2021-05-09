@@ -2,6 +2,10 @@
 
 "use strict";
 
+d3.csv("../data/job_skills.csv").then(function(data) {
+    var jobs = data;
+    console.log(jobs);
+})
 // function() {
 
 //     window.addEventListener("load", init);
