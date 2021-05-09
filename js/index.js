@@ -2,30 +2,27 @@
 
 "use strict";
 
-const fs = require('fs');
-const Papa = require('papaparse');
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "data.txt",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
 
-const csvFilePath = '../data/job_skills.csv';
+function processData(allText) {
+    var record_num = 7;
+    var allTextLines = allText.split(/\r\n|\n/);
+    var entries = allTextLines[0].split(',');
+    var lines = [];
 
-// Function to read csv which returns a promise so you can do async / await.
-
-const readCSV = async (filePath) => {
-  const csvFile = fs.readFileSync(filePath)
-  const csvData = csvFile.toString()  
-  return new Promise(resolve => {
-    Papa.parse(csvData, {
-      header: true,
-      complete: results => {
-        console.log('Complete', results.data.length, 'records.'); 
-        resolve(results.data);
-      }
-    });
-  });
-};
-
-const test = async () => {
-  let parsedData = await readCSV(csvFilePath); 
-  console.log(parsedData);
+    var headings = entries.splice(0,record_num);
+    while (entries.length>0) {
+        var tarr = [];
+        for (var j=0; j<record_num; j++) {
+            tarr.push(headings[j]+":"+entries.shift());
+        }
+        lines.push(tarr);
+    }
 }
-
-test();
