@@ -162,15 +162,46 @@ function renderJobListings() {
 
 renderJobListings();
 
-// <div class="listing container">
-    // <!-- <img src="img/pm.png" alt="program management logo"> --> */}
-//    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+function renderFilter(jobObjects) {
+    let listingArea = document.querySelector('#card-things');
+    listingArea.innerHTML = '';
+    for (let i = 0; i < 6; i++) {
+        let jobType = jobObjects[i].Category;
+        let listing;
+        if (jobType.includes('Finance')) {
+            listing = createFinanceCard(jobObjects[i])
+        } else if (jobType.includes('Program Management')) {
+            listing = createPMCard(jobObjects[i]);
+        } else if (jobType.includes('Sales')) {
+            listing = createSalesCard(jobObjects[i]);
+        } else if (jobType.includes('Marketing')) {
+            listing = createMarketingCard(jobObjects[i]);
+        } else if (jobType.includes('Technical Solutions')) {
+            listing = createTSCard(jobObjects[i]);
+        } else if (jobType.includes('User Experience')) {
+            listing = createUXCard(jobObjects[i]);
+        }
 
-  //  <div class="description">
-//    <h3 class="job-name">
-//      Google Cloud Program Manager
-//    </h3>
-//     <p class="job-description">Shape, shepherd, ship, and show technical programs designed to
-//     support the work of Cloud Customer Engineers and Solutions Architects.</p>
-// </div>
-// </div>
+        listingArea.append(listing);
+    }
+}
+
+// Filtering for program management
+let filter1 = document.querySelector('#job-type-1');
+filter1.addEventListener('change', function() {
+    if (this.checked) {
+        d3.csv("../data/job_information.csv").then(function(data) {
+            for (let i = 0; i < data.length; i++) {
+                let category = data[i].Category;
+                if (!(category.includes('Program Management'))) {
+                    data.splice(i, 1);
+                    i = i - 1;
+                }
+            }
+            renderFilter(data);
+        })
+    } else {
+        renderJobListings();
+    }
+})
+
