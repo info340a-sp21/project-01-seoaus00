@@ -81,7 +81,10 @@ footer p {
     width: 100%;
 } */
 .hero-content-container p {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
+    align-self: start;
+    width: 75%;
+    font-size: 1.25rem;
 }
 
 .hero-content-container button{
@@ -107,7 +110,7 @@ nav i {
 }
 
 .description p {
-    color: rgba(0, 0, 0, .25);
+    color: rgba(0, 0, 0, .5);
 }
 
 nav .nav-search p {
@@ -154,14 +157,14 @@ form {
 
 .listing {
     display: flex;
-    color: #667292;
+    color: #FF6583;
     margin: .5rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 9px rgba(0, 0, 0, .1);
 }
 
 .listing:hover {
-    box-shadow: 5px 10px;
+    box-shadow: 1px 1px 9px;
     cursor: pointer;
 }
 
@@ -347,6 +350,7 @@ section .about-content a {
     }
 
     .how-it-works-container {
+        height: 100vh;
         display: flex;
         justify-content: space-between;
     }
