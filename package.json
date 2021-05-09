@@ -39,6 +39,7 @@
   "dependencies": {
     "csv": "^5.5.0",
     "papaparse": "^5.3.0",
+    "readcsv": "^1.2.1",
     "requirejs": "^2.3.6"
   }
 }
