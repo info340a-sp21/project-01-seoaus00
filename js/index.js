@@ -14,6 +14,7 @@
 
 // getData();
 
+
 function createPMCard(obj) {
     let outerDiv = document.createElement('div');
     outerDiv.classList.add('listing', 'container');
@@ -32,6 +33,18 @@ function createPMCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
 
     return outerDiv;
 }
@@ -55,6 +68,18 @@ function createFinanceCard(obj) {
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
 
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
+
     return outerDiv;
 }
 
@@ -76,6 +101,18 @@ function createSalesCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
 
     return outerDiv;
 }
@@ -99,6 +136,18 @@ function createMarketingCard(obj) {
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
 
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
+
     return outerDiv;
 }
 
@@ -121,6 +170,18 @@ function createTSCard(obj) {
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
 
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
+
     return outerDiv;
 }
 
@@ -142,6 +203,18 @@ function createUXCard(obj) {
     innerDiv.appendChild(p);
     outerDiv.appendChild(iElement);
     outerDiv.appendChild(innerDiv);
+
+    outerDiv.addEventListener('click', function() {
+        if (!(outerDiv.classList.contains('selected'))) {
+            outerDiv.classList.add('selected');
+            h3.textContent = 'Minimum Qualifications';
+            p.textContent = obj['Minimum Qualifications'];
+        } else {
+            outerDiv.classList.remove('selected');
+            h3.textContent = obj.Title;
+            p.textContent = obj.Responsibilities;
+        }
+    })
 
     return outerDiv;
 }
@@ -322,8 +395,3 @@ filter6.addEventListener('change', function() {
 // get the data pertaining to the card
 // maybe loop through and see what value matches the job title 
 // display the qualifications
-
-let jobListing = document.querySelector('.listing');
-jobListing.addEventListener('click', function() {
-
-})
