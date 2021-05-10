@@ -40,36 +40,41 @@ nav .nav-container {
     flex-direction: column;
 }
 
-.hamburger-menu {
-    width: 100%;
-    z-index: 2;
+.nav-links a{
+    color: #505050;
+    text-decoration: none;
 }
 
-nav .nav-links {
+/* .hamburger-menu {
+    width: 100%;
+    z-index: 2; 
+} */
+
+/* .nav-links{
     margin: 0;
     justify-self: center;
     display: flex;
     flex-direction: column;
     background: #6C63FF;
-    /* height: 100vh; */
     width: 80vw;
     clip-path: circle(0px at 50% 0%);
     -webkit-clip-path: circle(0px at 50% 0%);
     transition: all 1s ease-in-out;
     pointer-events: none;
-}
+} */
 
-nav .nav-links.open {
+/* .nav-links.open {
     clip-path: circle(1000px at 50% 0%);
     -webkit-clip-path: circle(1000px at 50% 0%);
     pointer-events: all;
-}
+} */
 
-.nav-links a {
+/* .nav-links a {
     padding: 1rem;
     text-decoration: none;
     color: white;
-}
+} */
+
 .nav-search {
     display: flex;
 }
@@ -103,10 +108,13 @@ p {
 footer p {
     color: white;
 }
-/* .hero-content-container {
+
+
+.hero-content-container {
     height: inherit;
     width: 100%;
-} */
+}
+
 .hero-content-container p {
     margin: 1rem 0;
     align-self: start;
@@ -265,6 +273,7 @@ section .about-content a {
     nav .nav-container {
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
@@ -276,21 +285,22 @@ section .about-content a {
         justify-self: flex-end;
     }
 
-    nav .nav-links {
+    .nav-links {
         display: flex;
+        flex-direction: row;
         margin: 0;
         width: 100%;
         justify-content: space-around;
     }
 
-    nav .nav-links a {
+    .nav-links a {
         font-size: 1rem;
         text-decoration: none;
         color: #505050;
     }  
 
     /* hover animation for nav links */
-    nav .nav-links a::after {
+    .nav-links a::after {
         content: '';
         display: block;
         width: 0;
@@ -299,7 +309,7 @@ section .about-content a {
         transition: width .3s;
     }
 
-    nav .nav-links a:hover::after {
+    .nav-links a:hover::after {
         width: 100%;
         transition: width .3s;
     }
@@ -309,6 +319,7 @@ section .about-content a {
         font-weight: 700;
     }
     .nav-logo {
+        width: 50%;
         display: flex;
         margin: 0;
         color: #6C63FF;
