@@ -41,27 +41,35 @@ nav .nav-container {
 }
 
 .hamburger-menu {
+    width: 100%;
     z-index: 2;
 }
 
 nav .nav-links {
+    margin: 0;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     background: #6C63FF;
-    height: 100vh;
-    width: 100%;
-    clip-path: circle(0px at 90% -10%);
-    -webkit-clip-path: circle(0px at 90% -10%);
+    /* height: 100vh; */
+    width: 80vw;
+    clip-path: circle(0px at 50% 0%);
+    -webkit-clip-path: circle(0px at 50% 0%);
     transition: all 1s ease-in-out;
     pointer-events: none;
 }
 
 nav .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1000px at 50% 0%);
+    -webkit-clip-path: circle(1000px at 50% 0%);
     pointer-events: all;
 }
 
+.nav-links a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
 .nav-search {
     display: flex;
 }
