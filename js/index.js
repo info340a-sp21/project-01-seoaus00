@@ -414,12 +414,3 @@ filter6.addEventListener('change', function() {
         renderJobListings();
     }
 })
-
-let hamburger = document.querySelector('#hamburger-menu');
-let navLinks = document.querySelector('.nav-links');
-let links = document.querySelectorAll('.nav-links a');
-
-hamburger.addEventListener('click', () => {
-    console.log('click');
-    navLinks.classList.toggle('open');
-});
