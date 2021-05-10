@@ -388,10 +388,3 @@ filter6.addEventListener('change', function() {
         renderJobListings();
     }
 })
-
-// going to try and add an event listener to the job listings 
-// going to make it so that when the job is clicked on it shows the qualifications, then when clicked on
-// for a second time it will switch back 
-// get the data pertaining to the card
-// maybe loop through and see what value matches the job title 
-// display the qualifications
