@@ -6,18 +6,6 @@
 // unable to successfully figure it out. That being said, we decided to use D3.js to parse our 
 // csv so that it automatically transformed the text data into an object of arrays
 
-// function getData() {
-//     fetch("../data/job_information.csv")
-//     .then(function(response) {
-//         return response.parse();
-//     })
-//     .then(function(data) {
-//         console.log(data);
-//     })
-// }
-
-// getData();
-
 
 // Template used from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 //Get the button:
